@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  background: #000000;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.moon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(40deg, #f9fabe, #fffd3b);
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  box-shadow: 0 0 30px 0px #fffd3b, 0 0 80px 0 #ffffff;
+  animation: moonflashing 3s linear infinite;
+}
+@keyframes moonflashing {
+  0% {
+    filter: brightness(0.8);
+  }
+  50% {
+    filter: brightness(1.3);
+  }
+  100% {
+    filter: brightness(0.8);
+  }
+}
+@keyframes starflashing {
+  0% {
+    filter: brightness(0.3);
+  }
+  50% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(0.3);
+  }
+}
+.star {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  animation: starflashing 2s infinite;
+}
+.star1 {
+  top: 50%;
+  right: 20%;
+}
+.star2 {
+  top: 70%;
+  right: 30%;
+}
+.star3 {
+  top: 40%;
+  left: 20%;
+}
+.star4 {
+  top: 60%;
+  right: 10%;
+}
+.star5 {
+  top: 55%;
+  right: 44%;
+}
+.star6 {
+  top: 10%;
+  left: 30%;
+}
+.star7 {
+  top: 15%;
+  left: 20%;
+}
+
+.meteor {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  opacity: 0;
+  background: #19de04;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px #636262;
+}
+.meteor:after {
+  content: "";
+  display: block;
+  border: 0px solid #fff;
+  border-width: 2px 100px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);
+  transform: rotate(-45deg) translate3d(1px, 1px, 0);
+  transform-origin: 0% 0%;
+}
+.meteor1 {
+  top: 2vh;
+  left: 30vw;
+  animation: meteorflashing 2s infinite linear 5s;
+}
+.meteor2 {
+  top: 22vh;
+  left: 80vw;
+  background: rgb(234, 0, 255);
+  animation: meteorflashing 2s infinite linear 5s;
+}
+.meteor3 {
+  top: 30vh;
+  left: 40vw;
+  animation: meteorflashing 2s infinite linear 5s;
+}
+.meteor4 {
+  top: 10vh;
+  left: 50vw;
+  animation: meteorflashing 2s infinite linear 5s;
+}
+.meteor5 {
+  top: 5vh;
+  right: 5vw;
+  animation: meteorflashing 2s infinite linear 5s;
+}
+.meteor6 {
+  top: 1.2vh;
+  right: 10vw;
+  animation: meteorflashing 1s infinite linear 4s;
+}
+.meteor7 {
+  top: 1.6vh;
+  right: 56vw;
+  animation: meteorflashing 1.3s infinite linear 4s;
+}
+.meteor8 {
+  top: 2.5vh;
+  right: 43vw;
+  animation: meteorflashing 1.5s infinite linear 4s;
+}
+.meteor9 {
+  top: 3.9vh;
+  right: 16vw;
+  animation: meteorflashing 1.8s infinite linear 4s;
+}
+.meteor10 {
+  top: 6.4vh;
+  right: 79vw;
+  animation: meteorflashing 1.1s infinite linear 4s;
+}
+.meteor11 {
+  top: 2vh;
+  right: 33vw;
+  animation: meteorflashing 1.9s infinite linear 4s;
+}
+.meteor12 {
+  top: 2vh;
+  right: 90vw;
+  animation: meteorflashing 1.3s infinite linear 4s;
+}
+.meteor13 {
+  top: 0.6vh;
+  right: 68vw;
+  animation: meteorflashing 1.4s infinite linear 4s;
+}
+.meteor14 {
+  top: 0.9vh;
+  right: 10vw;
+  animation: meteorflashing 2s infinite linear 4s;
+}
+.meteor15 {
+  top: 2.6vh;
+  right: 45vw;
+  animation: meteorflashing 2.1s infinite linear 4s;
+}
+.meteor16 {
+  top: 1vh;
+  right: 100vw;
+  animation: meteorflashing 0.9s infinite linear 4s;
+}
+.meteor17 {
+  top: 1.9vh;
+  right: 85vw;
+  animation: meteorflashing 1.8s infinite linear 4s;
+}
+.meteor18 {
+  top: 4vh;
+  right: 77vw;
+  animation: meteorflashing 1.5s infinite linear 4s;
+}
+.meteor19 {
+  top: 4vh;
+  right: 100vw;
+  animation: meteorflashing 1.6s infinite linear 4s;
+}
+.meteor20 {
+  top: 4vh;
+  right: 20.6vw;
+  animation: meteorflashing 1.7s infinite linear 4s;
+}
+.meteor21 {
+  top: 4vh;
+  right: 37vw;
+  animation: meteorflashing 1.25s infinite linear 4s;
+}
+.meteor22 {
+  top: 5vh;
+  right: 69vw;
+  animation: meteorflashing 1.9s infinite linear 3s;
+}
+.meteor23 {
+  top: 5vh;
+  right: 57vw;
+  animation: meteorflashing 2s infinite linear 3s;
+}
+.meteor24 {
+  top: 5vh;
+  right: 100vw;
+  animation: meteorflashing 2.6s infinite linear 3s;
+}
+@keyframes meteorflashing {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) translate3d(-200px, 200px, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) translate3d(-500px, 500px, 0);
+  }
+}
+.bear {
+  position: absolute;
+  z-index: 2;
+  width: 200px;
+  height: 100px;
+  background: url(img/bear.png) no-repeat;
+  animation: bearRun 1s steps(8) infinite, bearMove 3s forwards;
+}
+
+.whiteHill {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 336px;
+  /* 必须水平方向重复，不然会中断 */
+  background: url(img/bg1.png) repeat-x;
+  animation: hillMove 30s linear infinite;
+}
+
+.blackHill {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  width: 100%;
+  height: 569px;
+  background: url(img/bg2.png) repeat-x;
+  animation: hillMove 30s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes bearRun {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1600px 0;
+  }
+}
+
+@keyframes bearMove {
+  0% {
+    top: 80%;
+    left: 0;
+  }
+
+  100% {
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes hillMove {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -3840px 0;
+  }
+}
